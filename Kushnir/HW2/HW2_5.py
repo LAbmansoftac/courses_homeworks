@@ -1,9 +1,16 @@
-from random import randint
+import string
+import random
 
-lst = []
-for i in range(10):
-    lst.append(randint(0, 100))
-lst = sorted(lst, reverse = True)
+rand_numbers_list = []
+for i in range(7):
+    rand_numbers_list.append(random.randint(2, 15))
 
-print(lst, chr(65))
+rand_numbers_list = sorted(rand_numbers_list, reverse = False)
 
+
+lis_letters = list(string.ascii_letters)
+
+
+for i in range(len(rand_numbers_list)):
+    print("The number of the letter is: ", rand_numbers_list[i])
+    print('The string for a number ' + str(rand_numbers_list[i]) + ' with the responsive letter '+ str(lis_letters[rand_numbers_list[i]]) + ' is ' + str(lis_letters[rand_numbers_list[i]]) + 'string' + '\n')

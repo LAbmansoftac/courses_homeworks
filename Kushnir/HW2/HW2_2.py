@@ -39,11 +39,4 @@ else:
 
 
 
-"""
 
-rand_numb = [randint(0, 999) for p in range(0, 9)]
-
-log_pass = dict(zip(login, password))
-
-print(log_pass)
-"""
